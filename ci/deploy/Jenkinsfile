@@ -1,0 +1,33 @@
+pipeline {
+  agent {
+    docker 'node:14.18.1-stretch'
+  }
+  stages {
+    stage('Checkout') {
+      steps {
+        checkout([
+          $class: 'GitSCM',
+          branches: [[
+            name: '*/master'
+          ]],
+          doGenerateSubmoduleConfigurations: false,
+          userRemoteConfigs: [[
+            credentialsId: '',
+            url: ''
+          ]]
+        ])
+        sh 'npm ci --no-cache'
+      }
+    }
+    stage('Publish') {
+      steps {
+        sh 'npm run publish'
+      }
+    }
+  }
+  post {
+    always {
+      cleanWs()
+    }
+  }
+}
