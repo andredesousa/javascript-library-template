@@ -69,7 +69,7 @@ In order to have a consistent git history every commit must follow a specific te
 
 Must be one of the following:
 
-- **build**: Changes that affect the build system or external dependencies (example scopes: Gradle, Maven)
+- **build**: Changes that affect the build system or external dependencies (example scopes: gulp, npm)
 - **ci**: Changes to our CI configuration files and scripts (example scopes: Jenkins, Travis, Circle, SauceLabs)
 - **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
 - **docs**: Documentation only changes
@@ -103,6 +103,8 @@ To publish your first package to npm, you need to go through these steps:
 - First, you need to have an npm account.
 - Second, you need to login to your npm account through the command line.
 - The final step is to publish your package with the `npm publish` command.
+
+This projection follows conventional commits and semantic versioning.
 
 In `ci` folder you can find scripts for your [Jenkins](https://www.jenkins.io/) CI/CD pipeline.
 Also, you can run `npm run build` to build the project. The build artifacts will be stored in the `dist` directory.
