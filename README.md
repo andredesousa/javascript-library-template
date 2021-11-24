@@ -104,7 +104,7 @@ To publish your first package to npm, you need to go through these steps:
 - Second, you need to login to your npm account through the command line.
 - The final step is to publish your package with the `npm publish` command.
 
-This projection follows conventional commits and semantic versioning.
+This project follows conventional commits and semantic versioning.
 
 In `ci` folder you can find scripts for your [Jenkins](https://www.jenkins.io/) CI/CD pipeline.
 Also, you can run `npm run build` to build the project. The build artifacts will be stored in the `dist` directory.
