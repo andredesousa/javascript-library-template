@@ -117,5 +117,5 @@ For further reference, please consider the following articles:
 - [npm scripts](https://docs.npmjs.com/cli/v8/using-npm/scripts)
 - [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [Simple setup for your next TypeScript project](https://itnext.io/simple-setup-for-your-typescript-project-d96f66113b41)
-- [Getting Started - Jest](https://jestjs.io/docs/getting-started)
+- [Jest - Getting Started](https://jestjs.io/docs/getting-started)
 - [Semantic Versioning](https://semver.org/)

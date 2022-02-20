@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker 'node:14.17.0-stretch'
+    docker 'node:14.18.1-stretch'
   }
   stages {
     stage('Checkout') {
